@@ -1,19 +1,23 @@
 import { useRef, useState } from 'react'
 
 import './App.css'
-import { hamazushi } from './menu/hamazushi'
-import { Box, Button, Center, Text, VStack } from '@chakra-ui/react'
-import { polygon } from 'framer-motion/client'
+import { hamazushi, type SushiItem } from './menu/hamazushi'
+import { Button, Text, VStack } from '@chakra-ui/react'
+
+
 
 function App() {
-  const [menu, setMenu] = useState<string[]>(hamazushi)
-  const [currentMenu, setCurrentMenu] = useState<string>('次食べるものはこれ！！！！！！！！')
+  const [menu, setMenu] = useState<SushiItem[]>(hamazushi)
+  const [currentMenu, setCurrentMenu] = useState<SushiItem>({
+    name: '次食べるものはこれ！！！！！！！！',
+    price: 0
+  })
   const [isRolling, setIsRolling] = useState<boolean>(false)
 
   //ランダムを回した回数
   const countRef = useRef<number>(0);
   //ランダムに選ばれたmenuの箱
-  const poolRef = useRef<string[]>([]);
+  const poolRef = useRef<SushiItem[]>([]);
 
 
   const rollGacha = () => {
@@ -49,7 +53,7 @@ function App() {
     countRef.current = -1
 
     //最初にあらかじめ30個のランダムなメニューのindexを仕込む
-    const initialPool: string[] = []
+    const initialPool: SushiItem[] = []
     for (let i = 0; i < 30; i++) {
       const randomIndex = (Math.floor(Math.random() * menu.length))
       initialPool.push(menu[randomIndex])
@@ -64,15 +68,22 @@ function App() {
   return (
 
     <VStack justify='center' minH='100vh' gap={10} backgroundColor='gray.200'>
-      <Box h='300px' display='flex' justifyContent='center' alignItems='center' >
+      <VStack h='300px' display='flex' justifyContent='center' alignItems='center' >
         <Text
-          fontSize={isRolling ? '4xl' : '8xl'}
+          fontSize={isRolling ? '4xl' : '6xl'}
           fontWeight='bold'
           color={isRolling ? 'black' : 'red'}
           textAlign='center'>
-          {currentMenu}
+          {currentMenu.name}
         </Text>
-      </Box>
+
+        {!isRolling && currentMenu.price > 0 && (
+          <Text fontSize="3xl" color="gray.600" mt={4}>
+            税込み{currentMenu.price}円
+          </Text>
+        )}
+
+      </VStack>
       <Button size='2xl' mt={10} onClick={handleGacha}>ガチャを引く</Button>
     </VStack >
 

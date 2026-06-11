@@ -2,7 +2,7 @@ import { useRef, useState } from 'react'
 
 import './App.css'
 import { hamazushi, type SushiItem } from './menu/hamazushi'
-import { Button, Text, VStack } from '@chakra-ui/react'
+import { Badge, Button, CarouselAutoplayIndicator, Flex, Text, VStack } from '@chakra-ui/react'
 
 
 
@@ -14,19 +14,38 @@ function App() {
   })
   const [isRolling, setIsRolling] = useState<boolean>(false)
 
+  const [history, setHistory] = useState<Record<string, number>>({})
+
   //ランダムを回した回数
   const countRef = useRef<number>(0);
   //ランダムに選ばれたmenuの箱
   const poolRef = useRef<SushiItem[]>([]);
 
+  //priceによってテキストの色変える処理
+  const getPriceColor = (price: number) => {
+    if (price >= 319) return '#d97706'
+    else if (price >= 231) return '#718096'
+    else if (price >= 176) return '#e53e3e'
+    else return 'black'
+  }
 
   const rollGacha = () => {
 
     const remainingCount = poolRef.current.length
 
     if (remainingCount == 1) {
-      setCurrentMenu(poolRef.current[0])
+      const finalSushi = poolRef.current[0]
+      setCurrentMenu(finalSushi)
       setIsRolling(false)
+
+      //最後に残った寿司のカウントを上げる処理
+      setHistory(prev => {
+        const currentCount = prev[finalSushi.name] || 0;
+        return {
+          ...prev,
+          [finalSushi.name]: currentCount + 1
+        }
+      })
       return
     }
 
@@ -54,31 +73,63 @@ function App() {
 
     //最初にあらかじめ30個のランダムなメニューのindexを仕込む
     const initialPool: SushiItem[] = []
-    for (let i = 0; i < 30; i++) {
+
+
+    const loopCount = Math.min(30, menu.length * 3)
+
+    for (let i = 0; i < loopCount; i++) {
       const randomIndex = (Math.floor(Math.random() * menu.length))
       initialPool.push(menu[randomIndex])
     }
     poolRef.current = initialPool
 
-    //関数開始
+    //ランダムで表示する処理を行う関数開始
     rollGacha()
+  }
+
+  const handleDelete = () => {
+    if (isRolling) return
+
+    setMenu(prev => {
+      return prev.filter(menu => menu.name !== currentMenu.name)
+    }
+    )
   }
 
 
   return (
 
-    <VStack justify='center' minH='100vh' gap={10} backgroundColor='gray.200'>
-      <VStack h='300px' display='flex' justifyContent='center' alignItems='center' >
+    <VStack justify='center' minH='100vh' gap={8} backgroundColor='gray.200'>
+
+      <Flex position='absolute' top='20px' right='20px'>
+        <Button onClick={handleDelete}>今のメニューを除外する</Button>
+      </Flex>
+
+      <VStack h='200px' display='flex' justifyContent='center' alignItems='center' >
         <Text
           fontSize={isRolling ? '4xl' : '6xl'}
           fontWeight='bold'
-          color={isRolling ? 'black' : 'red'}
+          color={isRolling ? 'black' : getPriceColor(currentMenu.price)}
           textAlign='center'>
           {currentMenu.name}
         </Text>
 
+        {!isRolling && currentMenu.price > 0 && (history[currentMenu.name] || 1) && (
+          <Badge
+            colorPalette='green'
+            variant='surface'
+            fontSize='2xl'
+            px={4}
+            py={4}
+            borderRadius='full'
+          >
+            x {history[currentMenu.name]}
+          </Badge>
+        )}
+
         {!isRolling && currentMenu.price > 0 && (
-          <Text fontSize="3xl" color="gray.600" mt={4}>
+          <Text fontSize="3xl"
+            color={"gray.600"} mt={4}>
             税込み{currentMenu.price}円
           </Text>
         )}

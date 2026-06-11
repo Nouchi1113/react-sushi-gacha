@@ -985,35 +985,35 @@ export const hamazushi: SushiItem[] = [
         "price": 297
     },
     {
-        "name": "コカ・コーラS：",
+        "name": "コカ・コーラS",
         "price": 198
     },
     {
-        "name": "カルピスS：",
+        "name": "カルピスS",
         "price": 198
     },
     {
-        "name": "カルピスソーダS：",
+        "name": "カルピスソーダS",
         "price": 198
     },
     {
-        "name": "ファンタメロンS：",
+        "name": "ファンタメロンS",
         "price": 198
     },
     {
-        "name": "ファンタグレープS：",
+        "name": "ファンタグレープS",
         "price": 198
     },
     {
-        "name": "スプライトS：",
+        "name": "スプライトS",
         "price": 198
     },
     {
-        "name": "煌烏龍茶S：",
+        "name": "煌烏龍茶S",
         "price": 198
     },
     {
-        "name": "Qoo オレンジS：",
+        "name": "Qoo オレンジS",
         "price": 198
     },
     {
@@ -1025,15 +1025,15 @@ export const hamazushi: SushiItem[] = [
         "price": 132
     },
     {
-        "name": "コーヒー（HOT／ICE）S：",
+        "name": "コーヒー（HOT／ICE）S",
         "price": 176
     },
     {
-        "name": "カフェラテ（HOT／ICE）S：",
+        "name": "カフェラテ（HOT／ICE）S",
         "price": 220
     },
     {
-        "name": "抹茶ラテ（HOT／ICE）S：",
+        "name": "抹茶ラテ（HOT／ICE）S",
         "price": 220
     },
     {

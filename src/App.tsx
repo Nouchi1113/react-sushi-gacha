@@ -7,6 +7,7 @@ import ModalMenuList from './components/ModalMenuList'
 import { getPriceColor } from './utils/price'
 import ModalHisotry from './components/ModalHistory'
 import ModalExceptMenuList from './components/ModalExceptMenuList'
+import { Archive, Dices, EyeOff, Trash2, XCircle } from 'lucide-react'
 
 
 
@@ -116,7 +117,7 @@ function App() {
 
   return (
 
-    <VStack justify='center' minH='100vh' gap={8} backgroundColor='gray.200'>
+    <VStack justify='center' minH='100vh' gap={8} backgroundColor='#e6edf5'>
       {isListOpen && (
         <ModalMenuList menus={menus} onClose={() => setIsListOpen(false)} />
       )}
@@ -136,11 +137,11 @@ function App() {
         px={2}
       >
         <Flex gap={3}>
-          <Button onClick={() => setIsListOpen(true)}>メニュ一覧</Button>
-          <Button onClick={() => setIsExceptListOpen(true)}>除外一覧</Button>
-          <Button onClick={() => setIsHistoryOpen(true)}>履歴</Button>
+          <Button onClick={() => setIsListOpen(true)}>🍣お品書き</Button>
+          <Button onClick={() => setIsExceptListOpen(true)}><Trash2 size={16} />除外一覧</Button>
+          <Button onClick={() => setIsHistoryOpen(true)}>🍵履歴</Button>
         </Flex>
-        <Button onClick={handleDelete}>メニューを除外</Button>
+        <Button onClick={handleDelete}><XCircle size={16} />候補から外す</Button>
       </Flex>
 
       <VStack h='200px' display='flex' justifyContent='center' alignItems='center' flex={1}>
@@ -176,7 +177,7 @@ function App() {
         )}
       </VStack>
       <Box w='100%' textAlign='center' margin={2}>
-        <Button size='2xl' onClick={handleGacha}>ガチャを引く</Button>
+        <Button size='2xl' onClick={handleGacha}>🎲ガチャを引く</Button>
       </Box>
 
     </VStack >

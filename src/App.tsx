@@ -2,12 +2,15 @@ import { useRef, useState } from 'react'
 
 import './App.css'
 import { hamazushi, type SushiItem } from './menu/hamazushi'
-import { Badge, Button, CarouselAutoplayIndicator, Flex, Text, VStack } from '@chakra-ui/react'
+import { Badge, Button, Flex, Text, VStack } from '@chakra-ui/react'
+import ModalMenuList from './components/ModalMenuList'
+import { getPriceColor } from './utils/price'
 
 
 
 function App() {
-  const [menu, setMenu] = useState<SushiItem[]>(hamazushi)
+  const [menus, setMenus] = useState<SushiItem[]>(hamazushi)
+  const [exceptMenus, setExceptMenus] = useState<SushiItem[]>([])
   const [currentMenu, setCurrentMenu] = useState<SushiItem>({
     name: '次食べるものはこれ！！！！！！！！',
     price: 0
@@ -16,18 +19,14 @@ function App() {
 
   const [history, setHistory] = useState<Record<string, number>>({})
 
+  const [isOpen, setIsOpen] = useState(false)
+
+
+
   //ランダムを回した回数
   const countRef = useRef<number>(0);
   //ランダムに選ばれたmenuの箱
   const poolRef = useRef<SushiItem[]>([]);
-
-  //priceによってテキストの色変える処理
-  const getPriceColor = (price: number) => {
-    if (price >= 319) return '#d97706'
-    else if (price >= 231) return '#718096'
-    else if (price >= 176) return '#e53e3e'
-    else return 'black'
-  }
 
   const rollGacha = () => {
 
@@ -75,11 +74,11 @@ function App() {
     const initialPool: SushiItem[] = []
 
 
-    const loopCount = Math.min(30, menu.length * 3)
+    const loopCount = Math.min(30, menus.length * 3)
 
     for (let i = 0; i < loopCount; i++) {
-      const randomIndex = (Math.floor(Math.random() * menu.length))
-      initialPool.push(menu[randomIndex])
+      const randomIndex = (Math.floor(Math.random() * menus.length))
+      initialPool.push(menus[randomIndex])
     }
     poolRef.current = initialPool
 
@@ -89,8 +88,15 @@ function App() {
 
   const handleDelete = () => {
     if (isRolling) return
+    if (currentMenu.price === 0) return
 
-    setMenu(prev => {
+    const isStillInMenu = menus.some((menu) => menu.name === currentMenu.name)
+
+    if (!isStillInMenu) return
+
+    setExceptMenus((prev) => [...prev, currentMenu])
+
+    setMenus(prev => {
       return prev.filter(menu => menu.name !== currentMenu.name)
     }
     )
@@ -100,10 +106,17 @@ function App() {
   return (
 
     <VStack justify='center' minH='100vh' gap={8} backgroundColor='gray.200'>
+      {isOpen && (
+        <ModalMenuList menus={menus} exceptMenus={exceptMenus} onClose={() => setIsOpen(false)} />
+      )}
 
       <Flex position='absolute' top='20px' right='20px'>
         <Button onClick={handleDelete}>今のメニューを除外する</Button>
       </Flex>
+      <Flex position='absolute' top='20px' left='20px'>
+        <Button onClick={() => setIsOpen(true)}>今のリストを表示</Button>
+      </Flex>
+
 
       <VStack h='200px' display='flex' justifyContent='center' alignItems='center' >
         <Text
@@ -137,6 +150,7 @@ function App() {
       </VStack>
       <Button size='2xl' mt={10} onClick={handleGacha}>ガチャを引く</Button>
     </VStack >
+
 
   )
 }

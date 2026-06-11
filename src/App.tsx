@@ -2,10 +2,11 @@ import { useRef, useState } from 'react'
 
 import './App.css'
 import { hamazushi, type SushiItem } from './menu/hamazushi'
-import { Badge, Button, Flex, HStack, Text, VStack } from '@chakra-ui/react'
+import { Badge, Box, Button, Flex, HStack, Text, VStack } from '@chakra-ui/react'
 import ModalMenuList from './components/ModalMenuList'
 import { getPriceColor } from './utils/price'
 import ModalHisotry from './components/ModalHistory'
+import ModalExceptMenuList from './components/ModalExceptMenuList'
 
 
 
@@ -24,6 +25,7 @@ function App() {
   const [sushiCounts, setSushiCounts] = useState<Record<string, number>>({})
 
   const [isListOpen, setIsListOpen] = useState(false)
+  const [isExceptListOpen, setIsExceptListOpen] = useState(false)
   const [isHistoryOpen, setIsHistoryOpen] = useState(false)
 
 
@@ -116,27 +118,32 @@ function App() {
 
     <VStack justify='center' minH='100vh' gap={8} backgroundColor='gray.200'>
       {isListOpen && (
-        <ModalMenuList menus={menus} exceptMenus={exceptMenus} onClose={() => setIsListOpen(false)} />
+        <ModalMenuList menus={menus} onClose={() => setIsListOpen(false)} />
+      )}
+
+      {isExceptListOpen && (
+        <ModalExceptMenuList exceptMenus={exceptMenus} onClose={() => setIsExceptListOpen(false)} />
       )}
 
       {isHistoryOpen && (
         <ModalHisotry history={history} onClose={() => setIsHistoryOpen(false)} />
       )}
 
-
-      <Flex position='absolute' top='20px' right='20px'>
-        <Button onClick={handleDelete}>今のメニューを除外する</Button>
+      <Flex
+        w='100%'
+        justifyContent='space-between'
+        pt={2}
+        px={2}
+      >
+        <Flex gap={3}>
+          <Button onClick={() => setIsListOpen(true)}>メニュ一覧</Button>
+          <Button onClick={() => setIsExceptListOpen(true)}>除外一覧</Button>
+          <Button onClick={() => setIsHistoryOpen(true)}>履歴</Button>
+        </Flex>
+        <Button onClick={handleDelete}>メニューを除外</Button>
       </Flex>
-      <Flex position='absolute' top='20px' left='20px'>
-        <Button onClick={() => setIsListOpen(true)}>今のリストを表示</Button>
-      </Flex>
 
-      <Flex position='absolute' top='80px' left='20px'>
-        <Button onClick={() => setIsHistoryOpen(true)}>履歴を表示</Button>
-      </Flex>
-
-
-      <VStack h='200px' display='flex' justifyContent='center' alignItems='center' >
+      <VStack h='200px' display='flex' justifyContent='center' alignItems='center' flex={1}>
         <HStack>
           <Text
             fontSize={isRolling ? '2xl' : '4xl'}
@@ -167,9 +174,11 @@ function App() {
             税込み{currentMenu.price}円
           </Text>
         )}
-
       </VStack>
-      <Button size='2xl' mt={10} onClick={handleGacha}>ガチャを引く</Button>
+      <Box w='100%' textAlign='center' margin={2}>
+        <Button size='2xl' onClick={handleGacha}>ガチャを引く</Button>
+      </Box>
+
     </VStack >
 
 

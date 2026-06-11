@@ -2,24 +2,30 @@ import { useRef, useState } from 'react'
 
 import './App.css'
 import { hamazushi, type SushiItem } from './menu/hamazushi'
-import { Badge, Button, Flex, Text, VStack } from '@chakra-ui/react'
+import { Badge, Button, Flex, HStack, Text, VStack } from '@chakra-ui/react'
 import ModalMenuList from './components/ModalMenuList'
 import { getPriceColor } from './utils/price'
+import ModalHisotry from './components/ModalHistory'
 
 
 
 function App() {
   const [menus, setMenus] = useState<SushiItem[]>(hamazushi)
-  const [exceptMenus, setExceptMenus] = useState<SushiItem[]>([])
   const [currentMenu, setCurrentMenu] = useState<SushiItem>({
     name: '次食べるものはこれ！！！！！！！！',
     price: 0
   })
+
+  const [history, setHistory] = useState<SushiItem[]>([])
+  const [exceptMenus, setExceptMenus] = useState<SushiItem[]>([])
+
   const [isRolling, setIsRolling] = useState<boolean>(false)
 
-  const [history, setHistory] = useState<Record<string, number>>({})
+  const [sushiCounts, setSushiCounts] = useState<Record<string, number>>({})
 
-  const [isOpen, setIsOpen] = useState(false)
+  const [isListOpen, setIsListOpen] = useState(false)
+  const [isHistoryOpen, setIsHistoryOpen] = useState(false)
+
 
 
 
@@ -38,13 +44,15 @@ function App() {
       setIsRolling(false)
 
       //最後に残った寿司のカウントを上げる処理
-      setHistory(prev => {
+      setSushiCounts(prev => {
         const currentCount = prev[finalSushi.name] || 0;
         return {
           ...prev,
           [finalSushi.name]: currentCount + 1
         }
       })
+
+      setHistory((prev) => [...prev, finalSushi])
       return
     }
 
@@ -55,6 +63,7 @@ function App() {
     //2.あらたに選んだ要素を配列から削除する
     const deleteMenuIndex = Math.floor(Math.random() * remainingCount)
     poolRef.current.splice(deleteMenuIndex, 1)
+
     //3. 表示スピードを少しずつ遅くする
     countRef.current++
     const delay = Math.pow(1.28, countRef.current);
@@ -106,39 +115,51 @@ function App() {
   return (
 
     <VStack justify='center' minH='100vh' gap={8} backgroundColor='gray.200'>
-      {isOpen && (
-        <ModalMenuList menus={menus} exceptMenus={exceptMenus} onClose={() => setIsOpen(false)} />
+      {isListOpen && (
+        <ModalMenuList menus={menus} exceptMenus={exceptMenus} onClose={() => setIsListOpen(false)} />
       )}
+
+      {isHistoryOpen && (
+        <ModalHisotry history={history} onClose={() => setIsHistoryOpen(false)} />
+      )}
+
 
       <Flex position='absolute' top='20px' right='20px'>
         <Button onClick={handleDelete}>今のメニューを除外する</Button>
       </Flex>
       <Flex position='absolute' top='20px' left='20px'>
-        <Button onClick={() => setIsOpen(true)}>今のリストを表示</Button>
+        <Button onClick={() => setIsListOpen(true)}>今のリストを表示</Button>
+      </Flex>
+
+      <Flex position='absolute' top='80px' left='20px'>
+        <Button onClick={() => setIsHistoryOpen(true)}>履歴を表示</Button>
       </Flex>
 
 
       <VStack h='200px' display='flex' justifyContent='center' alignItems='center' >
-        <Text
-          fontSize={isRolling ? '4xl' : '6xl'}
-          fontWeight='bold'
-          color={isRolling ? 'black' : getPriceColor(currentMenu.price)}
-          textAlign='center'>
-          {currentMenu.name}
-        </Text>
+        <HStack>
+          <Text
+            fontSize={isRolling ? '2xl' : '4xl'}
+            fontWeight='bold'
+            color={isRolling ? 'black' : getPriceColor(currentMenu.price)}
+            textAlign='center'>
+            {currentMenu.name}
+          </Text>
 
-        {!isRolling && currentMenu.price > 0 && (history[currentMenu.name] || 1) && (
-          <Badge
-            colorPalette='green'
-            variant='surface'
-            fontSize='2xl'
-            px={4}
-            py={4}
-            borderRadius='full'
-          >
-            x {history[currentMenu.name]}
-          </Badge>
-        )}
+          {!isRolling && currentMenu.price > 0 && (sushiCounts[currentMenu.name] || 1) && (
+            <Badge
+              colorPalette='green'
+              variant='surface'
+              fontSize='2xl'
+              px={4}
+              py={4}
+              borderRadius='full'
+            >
+              x {sushiCounts[currentMenu.name]}
+            </Badge>
+          )}
+        </HStack>
+
 
         {!isRolling && currentMenu.price > 0 && (
           <Text fontSize="3xl"

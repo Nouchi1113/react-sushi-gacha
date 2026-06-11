@@ -7,7 +7,7 @@ import ModalMenuList from './components/ModalMenuList'
 import { getPriceColor } from './utils/price'
 import ModalHisotry from './components/ModalHistory'
 import ModalExceptMenuList from './components/ModalExceptMenuList'
-import { Archive, Dices, EyeOff, Trash2, XCircle } from 'lucide-react'
+import { Trash2, XCircle } from 'lucide-react'
 
 
 

@@ -1,4 +1,4 @@
-import { Box, Center, HStack, Text, VStack } from "@chakra-ui/react"
+import { Box, Center, Text, VStack } from "@chakra-ui/react"
 import type { SushiItem } from "../menu/hamazushi"
 import { getPriceColor } from "../utils/price"
 

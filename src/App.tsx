@@ -131,7 +131,7 @@ function App() {
 
     <VStack justify='center' minH='100vh' gap={8} backgroundColor='#e6edf5'>
       {isListOpen && (
-        <ModalMenuList menus={menus} onClose={() => setIsListOpen(false)} />
+        <ModalMenuList menus={menus} sushiCounts={sushiCounts} onClose={() => setIsListOpen(false)} />
       )}
 
       {isExceptListOpen && (

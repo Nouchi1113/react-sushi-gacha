@@ -15,14 +15,6 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "特大5種野菜のかき揚げ握り（お好み風）",
-    "price": 110,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
     "name": "鴨つくね軍艦",
     "price": 110,
     "genre": "期間限定",
@@ -55,23 +47,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "炙り北海道噴火湾産大粒ほたて焦がし醤油",
-    "price": 176,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
     "name": "厳選まぐろ中とろ",
-    "price": 176,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "炙り厳選まぐろ中とろゆず塩",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -135,71 +111,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "バフンウニ～うにソースがけ～",
-    "price": 319,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "鹿児島県産大切り活〆平政",
-    "price": 319,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "炙り鹿児島県産大切り平政ゆず塩",
-    "price": 319,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "鹿児島県産大切り平政レアステーキ",
-    "price": 319,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "鹿児島県産活〆とろ平政",
-    "price": 319,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "炙り鹿児島県産とろ平政ゆず塩",
-    "price": 319,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
     "name": "大えびフライ",
-    "price": 319,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "大えびフライ（タルタルソース）",
-    "price": 319,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "大えびフライ（お好みソース）",
     "price": 319,
     "genre": "期間限定",
     "area": [
@@ -215,56 +127,8 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "炙り重ね厳選まぐろ中とろゆず塩",
-    "price": 319,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
     "name": "一本穴子",
     "price": 528,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "濃厚冷やし担々麺（花椒付き）",
-    "price": 473,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "鴨うどんつくね入り",
-    "price": 473,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "鴨そばつくね入り",
-    "price": 473,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "2種のチーズのカルボナーラ風茶碗蒸し",
-    "price": 319,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "花こえび®入りおさかなナゲット",
-    "price": 242,
     "genre": "期間限定",
     "area": [
       "全国"
@@ -280,14 +144,6 @@ export const hamazushi: SushiItem[] = [
   },
   {
     "name": "完熟アップルマンゴー",
-    "price": 297,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "濃厚 抹茶のベイクドチーズケーキ",
     "price": 297,
     "genre": "期間限定",
     "area": [
@@ -344,14 +200,6 @@ export const hamazushi: SushiItem[] = [
   },
   {
     "name": "特製漬けとろびんちょう",
-    "price": 132,
-    "genre": "にぎり",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "とろびんちょう塩ごま油",
     "price": 132,
     "genre": "にぎり",
     "area": [
@@ -433,14 +281,6 @@ export const hamazushi: SushiItem[] = [
   {
     "name": "えび 塩ごま油",
     "price": 132,
-    "genre": "にぎり",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "えびたま二種盛り（えび・旨だしたまご）",
-    "price": 110,
     "genre": "にぎり",
     "area": [
       "全国"
@@ -567,14 +407,6 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "いか天握りガーリックマヨ",
-    "price": 132,
-    "genre": "にぎり",
-    "area": [
-      "全国"
-    ]
-  },
-  {
     "name": "いか天",
     "price": 132,
     "genre": "にぎり",
@@ -639,31 +471,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "燻製二種盛り（生ハム・合鴨）",
-    "price": 110,
-    "genre": "肉握り",
-    "area": [
-      "全国"
-    ]
-  },
-  {
     "name": "ローストビーフ",
-    "price": 110,
-    "genre": "肉握り",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "ローストビーフガーリックソース",
-    "price": 110,
-    "genre": "肉握り",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "ローストビーフガーリックソース山わさび",
     "price": 110,
     "genre": "肉握り",
     "area": [
@@ -744,22 +552,6 @@ export const hamazushi: SushiItem[] = [
   },
   {
     "name": "まぐろたたき納豆",
-    "price": 110,
-    "genre": "軍艦・細巻き・その他",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "たっぷりかにみそ（紅ずわい使用）",
-    "price": 110,
-    "genre": "軍艦・細巻き・その他",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "大葉かにみそ（紅ずわい使用）",
     "price": 110,
     "genre": "軍艦・細巻き・その他",
     "area": [
@@ -879,14 +671,6 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "たくあん巻(ごま入り)",
-    "price": 110,
-    "genre": "軍艦・細巻き・その他",
-    "area": [
-      "全国"
-    ]
-  },
-  {
     "name": "納豆巻",
     "price": 110,
     "genre": "軍艦・細巻き・その他",
@@ -930,30 +714,6 @@ export const hamazushi: SushiItem[] = [
     "name": "さばの押し寿司",
     "price": 176,
     "genre": "軍艦・細巻き・その他",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "いなり(ごま入り)",
-    "price": 110,
-    "genre": "軍艦・細巻き・その他",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "特製キンパ風ツナキムチ太巻",
-    "price": 110,
-    "genre": "軍艦・細巻き・その他",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "とろびんちょうレアステーキ",
-    "price": 176,
-    "genre": "贅沢握り・三種盛り",
     "area": [
       "全国"
     ]
@@ -1031,22 +791,6 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "活〆まだい（四国・九州産）",
-    "price": 176,
-    "genre": "贅沢握り・三種盛り",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "炙りまだいゆず塩（四国・九州産）",
-    "price": 176,
-    "genre": "贅沢握り・三種盛り",
-    "area": [
-      "全国"
-    ]
-  },
-  {
     "name": "大とろサーモン",
     "price": 176,
     "genre": "贅沢握り・三種盛り",
@@ -1064,30 +808,6 @@ export const hamazushi: SushiItem[] = [
   },
   {
     "name": "炙りうなぎ",
-    "price": 176,
-    "genre": "贅沢握り・三種盛り",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "ほたて(北海道・青森県産)",
-    "price": 176,
-    "genre": "贅沢握り・三種盛り",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "炙りほたて(北海道・青森県産)",
-    "price": 176,
-    "genre": "贅沢握り・三種盛り",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "ほたてレアステーキ(北海道・青森県産)",
     "price": 176,
     "genre": "贅沢握り・三種盛り",
     "area": [
@@ -1329,14 +1049,6 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "サーモンつつみ(いくらのせ)",
-    "price": 176,
-    "genre": "贅沢握り・三種盛り",
-    "area": [
-      "全国"
-    ]
-  },
-  {
     "name": "いくら",
     "price": 176,
     "genre": "贅沢握り・三種盛り",
@@ -1354,14 +1066,6 @@ export const hamazushi: SushiItem[] = [
   },
   {
     "name": "生しらす（日本近海産）",
-    "price": 176,
-    "genre": "贅沢握り・三種盛り",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "つぶっこ（樺太ししゃも卵）",
     "price": 176,
     "genre": "贅沢握り・三種盛り",
     "area": [
@@ -1396,110 +1100,6 @@ export const hamazushi: SushiItem[] = [
     "name": "アスパラ天",
     "price": 176,
     "genre": "贅沢握り・三種盛り",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "まぐろ三種盛りまぐろ・とろびんちょう・とろたく",
-    "price": 176,
-    "genre": "贅沢握り・三種盛り",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "いか三種盛り真いか・アカイカ・大葉漬けアカイカ",
-    "price": 176,
-    "genre": "贅沢握り・三種盛り",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "いか三種盛りいか・アカイカ・大葉漬けアカイカ",
-    "price": 176,
-    "genre": "贅沢握り・三種盛り",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "えび三種盛りえび・甘えび・生えび",
-    "price": 176,
-    "genre": "贅沢握り・三種盛り",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "レアステーキ三種盛りとろびんちょう・サーモン・アカイカ",
-    "price": 231,
-    "genre": "贅沢握り・三種盛り",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "とろ三種盛り中とろ・とろびんちょう・大とろサーモン",
-    "price": 319,
-    "genre": "贅沢握り・三種盛り",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "とろネバ三種盛りまぐろたたき軍艦・納豆・いかオクラ",
-    "price": 176,
-    "genre": "贅沢握り・三種盛り",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "サラダ軍艦三種盛りシーフード・コーン・ツナ",
-    "price": 176,
-    "genre": "贅沢握り・三種盛り",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "厳選まぐろ中とろ食べ比べ（中とろ・炙りゆず塩）",
-    "price": 319,
-    "genre": "至福の一貫",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "厳選まぐろ中とろ食べ比べ（中とろ・レアステーキ）",
-    "price": 319,
-    "genre": "至福の一貫",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "天然赤えび食べ比べ（赤えび・炙り塩レモン）",
-    "price": 319,
-    "genre": "至福の一貫",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "天然赤えび食べ比べ（赤えび・レアステーキ）",
-    "price": 319,
-    "genre": "至福の一貫",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "焼津産かつおだしの特製茶碗蒸し",
-    "price": 209,
-    "genre": "サイドメニュー",
     "area": [
       "全国"
     ]
@@ -1617,24 +1217,8 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "焼豚増量特製しょう油ラーメン",
-    "price": 506,
-    "genre": "サイドメニュー",
-    "area": [
-      "全国"
-    ]
-  },
-  {
     "name": "厳選素材の貝節塩ラーメン",
     "price": 429,
-    "genre": "サイドメニュー",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "焼豚増量厳選素材の貝節塩ラーメン",
-    "price": 506,
     "genre": "サイドメニュー",
     "area": [
       "全国"
@@ -1665,14 +1249,6 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "カリカリポテト（バター醤油味）",
-    "price": 297,
-    "genre": "サイドメニュー",
-    "area": [
-      "全国"
-    ]
-  },
-  {
     "name": "チーズカリカリポテト",
     "price": 319,
     "genre": "サイドメニュー",
@@ -1683,14 +1259,6 @@ export const hamazushi: SushiItem[] = [
   {
     "name": "MEGAカリカリポテト",
     "price": 429,
-    "genre": "サイドメニュー",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "MEGAカリカリポテト（バター醤油味）",
-    "price": 473,
     "genre": "サイドメニュー",
     "area": [
       "全国"
@@ -1723,14 +1291,6 @@ export const hamazushi: SushiItem[] = [
   {
     "name": "あさりの酒蒸し",
     "price": 297,
-    "genre": "サイドメニュー",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "ツナとブロッコリーのタルタルサラダ",
-    "price": 176,
     "genre": "サイドメニュー",
     "area": [
       "全国"
@@ -1801,14 +1361,6 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "フランス直輸入濃厚ガトーショコラ",
-    "price": 242,
-    "genre": "デザート・ドリンク",
-    "area": [
-      "全国"
-    ]
-  },
-  {
     "name": "たまごプリン",
     "price": 242,
     "genre": "デザート・ドリンク",
@@ -1827,22 +1379,6 @@ export const hamazushi: SushiItem[] = [
   {
     "name": "大学いも",
     "price": 176,
-    "genre": "デザート・ドリンク",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "大学いもバニラアイス添え",
-    "price": 242,
-    "genre": "デザート・ドリンク",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "コーヒーゼリー(バニラアイスのせ)",
-    "price": 209,
     "genre": "デザート・ドリンク",
     "area": [
       "全国"
@@ -1883,14 +1419,6 @@ export const hamazushi: SushiItem[] = [
   {
     "name": "波照間黒糖のわらびもち",
     "price": 110,
-    "genre": "デザート・ドリンク",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "波照間黒糖のわらびもちバニラアイス添え",
-    "price": 176,
     "genre": "デザート・ドリンク",
     "area": [
       "全国"
@@ -1953,7 +1481,15 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "コカ・コーラS：180円（税込198円）",
+    "name": "コカ・コーラ（S）",
+    "price": 198,
+    "genre": "デザート・ドリンク",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "コカ・コーラ（M）",
     "price": 253,
     "genre": "デザート・ドリンク",
     "area": [
@@ -1961,7 +1497,15 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "カルピスS：180円（税込198円）",
+    "name": "カルピス（S）",
+    "price": 198,
+    "genre": "デザート・ドリンク",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "カルピス（M）",
     "price": 253,
     "genre": "デザート・ドリンク",
     "area": [
@@ -1969,7 +1513,15 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "カルピスソーダS：180円（税込198円）",
+    "name": "カルピスソーダ（S）",
+    "price": 198,
+    "genre": "デザート・ドリンク",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "カルピスソーダ（M）",
     "price": 253,
     "genre": "デザート・ドリンク",
     "area": [
@@ -1977,7 +1529,15 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "ファンタメロンS：180円（税込198円）",
+    "name": "ファンタメロン（S）",
+    "price": 198,
+    "genre": "デザート・ドリンク",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "ファンタメロン（M）",
     "price": 253,
     "genre": "デザート・ドリンク",
     "area": [
@@ -1985,7 +1545,15 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "ファンタグレープS：180円（税込198円）",
+    "name": "ファンタグレープ（S）",
+    "price": 198,
+    "genre": "デザート・ドリンク",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "ファンタグレープ（M）",
     "price": 253,
     "genre": "デザート・ドリンク",
     "area": [
@@ -1993,7 +1561,15 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "スプライトS：180円（税込198円）",
+    "name": "スプライト（S）",
+    "price": 198,
+    "genre": "デザート・ドリンク",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "スプライト（M）",
     "price": 253,
     "genre": "デザート・ドリンク",
     "area": [
@@ -2001,7 +1577,15 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "煌烏龍茶S：180円（税込198円）",
+    "name": "煌烏龍茶（S）",
+    "price": 198,
+    "genre": "デザート・ドリンク",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "煌烏龍茶（M）",
     "price": 253,
     "genre": "デザート・ドリンク",
     "area": [
@@ -2009,7 +1593,15 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "Qoo オレンジS：180円（税込198円）",
+    "name": "Qoo オレンジ（S）",
+    "price": 198,
+    "genre": "デザート・ドリンク",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "Qoo オレンジ（M）",
     "price": 253,
     "genre": "デザート・ドリンク",
     "area": [
@@ -2033,7 +1625,15 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "コーヒー（HOT／ICE）S：160円（税込176円）",
+    "name": "コーヒー（HOT／ICE）（S）",
+    "price": 176,
+    "genre": "デザート・ドリンク",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "コーヒー（HOT／ICE）（M）",
     "price": 253,
     "genre": "デザート・ドリンク",
     "area": [
@@ -2041,7 +1641,15 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "カフェラテ（HOT／ICE）S：200円（税込220円）",
+    "name": "カフェラテ（HOT／ICE）（S）",
+    "price": 220,
+    "genre": "デザート・ドリンク",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "カフェラテ（HOT／ICE）（M）",
     "price": 275,
     "genre": "デザート・ドリンク",
     "area": [
@@ -2049,7 +1657,15 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "抹茶ラテ（HOT／ICE）S：200円（税込220円）",
+    "name": "抹茶ラテ（HOT／ICE）（S）",
+    "price": 220,
+    "genre": "デザート・ドリンク",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "抹茶ラテ（HOT／ICE）（M）",
     "price": 275,
     "genre": "デザート・ドリンク",
     "area": [
@@ -2121,32 +1737,6 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "サントリーオールフリー（ノンアルコールビール）",
-    "price": 396,
-    "genre": "アルコール",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "ほっき貝(カナダ産)",
-    "price": 110,
-    "genre": "地域限定",
-    "area": [
-      "東北",
-      "関東",
-      "北陸"
-    ]
-  },
-  {
-    "name": "炙りほっき貝ゆず塩(カナダ産)",
-    "price": 110,
-    "genre": "地域限定",
-    "area": [
-      "東北"
-    ]
-  },
-  {
     "name": "真いか",
     "price": 110,
     "genre": "地域限定",
@@ -2166,15 +1756,6 @@ export const hamazushi: SushiItem[] = [
       "関東",
       "東海",
       "関西"
-    ]
-  },
-  {
-    "name": "ゆず塩炙りほっき貝(カナダ産)",
-    "price": 110,
-    "genre": "地域限定",
-    "area": [
-      "関東",
-      "北陸"
     ]
   },
   {

@@ -8,8 +8,7 @@ import { getPriceColor } from './utils/price'
 import ModalHisotry from './components/ModalHistory'
 import ModalExceptMenuList from './components/ModalExceptMenuList'
 import { Trash2, XCircle } from 'lucide-react'
-
-
+import { Toaster, toaster } from './components/ui/toaster'
 
 function App() {
   const [menus, setMenus] = useState<SushiItem[]>(hamazushi)
@@ -106,6 +105,14 @@ function App() {
 
     if (!isStillInMenu) return
 
+    toaster.create({
+      title: 'ゴミ箱に入れました',
+      description: `${currentMenu.name} をゴミ箱に入れました`,
+      type: "info",
+      duration: 1500,
+
+    })
+
     setExceptMenus((prev) => [...prev, currentMenu])
 
     setMenus(prev => {
@@ -179,7 +186,7 @@ function App() {
       <Box w='100%' textAlign='center' margin={2}>
         <Button size='2xl' onClick={handleGacha}>🎲ガチャを引く</Button>
       </Box>
-
+      <Toaster />
     </VStack >
 
 

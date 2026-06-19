@@ -11,10 +11,15 @@ import { Trash2, XCircle } from 'lucide-react'
 import { Toaster, toaster } from './components/ui/toaster'
 
 function App() {
-  const [menus, setMenus] = useState<SushiItem[]>(hamazushi)
+  const firstMenus = hamazushi.filter((menu) => (menu.area.includes('全国') && menu.genre !== 'お持ち帰り' && menu.genre !== 'アルコール'));
+
+  const [menus, setMenus] = useState<SushiItem[]>(firstMenus)
+
   const [currentMenu, setCurrentMenu] = useState<SushiItem>({
     name: '次食べるものはこれ！！！！！！！！',
-    price: 0
+    price: 0,
+    genre: '',
+    area: ['']
   })
 
   const [history, setHistory] = useState<SushiItem[]>([])
@@ -152,6 +157,12 @@ function App() {
       </Flex>
 
       <VStack h='200px' display='flex' justifyContent='center' alignItems='center' flex={1}>
+        {!isRolling && currentMenu.price > 0 && (sushiCounts[currentMenu.name] || 1) && (
+          <Text fontWeight='bold'>
+            {currentMenu.genre}
+          </Text>
+        )}
+
         <HStack>
           <Text
             fontSize={isRolling ? '2xl' : '4xl'}

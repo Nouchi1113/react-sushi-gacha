@@ -11,7 +11,7 @@ import { Trash2, XCircle } from 'lucide-react'
 import { Toaster, toaster } from './components/ui/toaster'
 
 function App() {
-  const firstMenus = hamazushi.filter((menu) => (menu.area.includes('全国') && menu.genre !== 'お持ち帰り' && menu.genre !== 'アルコール'));
+  const firstMenus = hamazushi.filter((menu) => ((menu.area.includes('全国') || menu.area.includes('関東')) && menu.genre !== '都市型' && menu.genre !== 'アルコール'));
 
   const [menus, setMenus] = useState<SushiItem[]>(firstMenus)
 

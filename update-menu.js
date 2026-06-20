@@ -20,10 +20,22 @@ async function updateMenu() {
 
             const existingItem = sushiItems.find(item => item.name === name)
             if (existingItem) {
-                if (!existingItem.area.includes(area)) {
-                    existingItem.area.push(area)
+                // 💡 既存のエリア、または新しいエリアのどちらかが「全国」の場合
+                if (existingItem.area.includes('全国') || area === '全国') {
+                    existingItem.area = ['全国'];
+                    // ジャンルは「地域限定」より、本来の具体的なジャンル（にぎり等）を優先したいので、
+                    // 新しいジャンルが「地域限定」以外の場合のみ上書きする
+                    if (genre !== '地域限定') {
+                        existingItem.genre = genre;
+                    }
+                } else {
+                    // 💡 どちらも「全国」ではない場合（純粋な地域限定の重複：東海、関西、沖縄など）
+                    if (!existingItem.area.includes(area)) {
+                        existingItem.area.push(area);
+                    }
                 }
             } else {
+                // 新規登録
                 sushiItems.push({
                     name,
                     price,
@@ -34,50 +46,71 @@ async function updateMenu() {
         }
 
         $('.men-section').each((sectionIndex, sectionEl) => {
-            const imgAlt = $(sectionEl).find('h2.men-title img').attr('alt')?.trim()
+            const titleImg = $(sectionEl).find('h2.men-title img')
+            const imgAlt = titleImg.attr('alt')?.trim() || ''
             const h3Text = $(sectionEl).find('h3').text().trim()
 
             let genre = 'その他'
             let sectionArea = '全国'
 
-            if (h3Text) {
-                if (h3Text.length > 3 || !h3Text.match(/関東|北陸|東海|関西|中国|四国|九州|東北|北海道/)) {
-                    return;
+            // 💡 1. 沖縄を追加
+            const matchArea = h3Text.match(/関東|北陸|東海|関西|中国|四国|九州|東北|北海道|沖縄/)
+
+            if (titleImg.length > 0) {
+                genre = imgAlt || 'お寿司';
+                // 💡 2. もし見出し画像が「地域限定」等だった場合、勝手に「全国」扱いにしない
+                if (genre.includes('地域限定')) {
+                    sectionArea = matchArea ? matchArea[0] : '地域不明';
+                } else {
+                    sectionArea = '全国';
                 }
-                genre = '地域限定';
-                sectionArea = h3Text;
-            } else if (imgAlt) {
-                genre = imgAlt;
-                sectionArea = '全国';
+
+            } else if (h3Text) {
+                if (h3Text.includes('お持ち帰り') || h3Text.includes('丼') || h3Text.includes('セット')) {
+                    genre = 'お持ち帰り';
+                    sectionArea = matchArea ? matchArea[0] : '全国';
+                } else if (matchArea) {
+                    genre = '地域限定';
+                    sectionArea = matchArea[0];
+                } else {
+                    genre = h3Text;
+                    // 💡 3. テキストが単に「地域限定」等で地域名がない場合も「全国」を避ける
+                    if (genre.includes('地域限定')) {
+                        sectionArea = '地域不明';
+                    } else {
+                        sectionArea = '全国';
+                    }
+                }
+            } else {
+                return;
             }
 
+            // 商品のループ処理
             $(sectionEl).find('.men-products-list__li').each((i, el) => {
                 const textBlock = $(el).find('.men-products-item__text')
                 const htmlContent = textBlock.html() || ''
 
-                // 💡 <br>で分解し、それぞれの行をクレンジング（文字前後の空白除去）して配列化
+                // <br>で分解し、それぞれの行をクレンジングして配列化
                 const parts = htmlContent.split('<br>').map(p => cheerio.load(p).text().trim()).filter(Boolean)
 
                 if (parts.length === 0) return
 
-                // 1行目は絶対にベースの商品名（例：「Qoo オレンジ」や「まぐろ」）
                 const baseName = parts[0]
+                const isMultipleSizes = parts.slice(1).some(line => line.includes('：') || line.includes(':'))
 
-                // 💡 判定分岐：2行目が「価格（通常）」か「サイズ：価格（ドリンク等）」か
-                const secondLine = parts[1] || ''
-                const hasSeparator = secondLine.includes('：') || secondLine.includes(':')
+                if (!isMultipleSizes) {
+                    // ⭕【通常パターン】お寿司やサイドメニュー
+                    const priceText = parts[parts.length - 1]
+                    const nameParts = parts.slice(0, parts.length - 1)
+                    const fullName = nameParts.join('')
 
-                if (parts.length === 2 && !hasSeparator) {
-                    // ⭕【通常パターン】お寿司やサイドメニュー（1行目が名前、2行目が価格）
-                    const priceText = secondLine
                     const match = priceText.match(/税込(\d+)円/)
                     const price = match ? parseInt(match[1]) : (parseInt(priceText.replace(/[^0-9]/g, '')) || 0)
 
-                    pushItem(baseName, price, genre, sectionArea)
+                    pushItem(fullName, price, genre, sectionArea)
 
                 } else {
                     // ⭕【ドリンクなどの複数サイズパターン】
-                    // 2行目以降（S：180円… M：230円… など）をループでそれぞれ1商品として処理
                     for (let j = 1; j < parts.length; j++) {
                         const line = parts[j]
                         const separator = line.includes('：') ? '：' : ':'
@@ -86,11 +119,8 @@ async function updateMenu() {
 
                         const [size, priceText] = line.split(separator)
 
-                        // 価格の抽出
                         const match = priceText.match(/税込(\d+)円/)
                         const price = match ? parseInt(match[1]) : (parseInt(priceText.replace(/[^0-9]/g, '')) || 0)
-
-                        // 商品名を「Qoo オレンジ（S）」のように合体させる
                         const fullName = `${baseName}（${size.trim()}）`
 
                         pushItem(fullName, price, genre, sectionArea)

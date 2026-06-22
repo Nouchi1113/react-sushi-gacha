@@ -120,6 +120,8 @@ function App() {
 
     setExceptMenus((prev) => [...prev, currentMenu])
 
+    setHistory((prev) => prev.filter((menu) => menu.name !== currentMenu.name))
+
     setMenus(prev => {
       return prev.filter(menu => menu.name !== currentMenu.name)
     }

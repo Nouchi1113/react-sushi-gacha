@@ -23,7 +23,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "九州産あじのたたき大葉つつみ",
+    "name": "北海道噴火湾水揚げ茹でほたて",
     "price": 110,
     "genre": "期間限定",
     "area": [
@@ -31,7 +31,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "九州産あじのたたき大葉つつみ（みそ和え）",
+    "name": "炙り北海道噴火湾水揚げほたて焦がし醤油",
     "price": 110,
     "genre": "期間限定",
     "area": [
@@ -72,6 +72,22 @@ export const hamazushi: SushiItem[] = [
   },
   {
     "name": "いか天握り明太マヨ",
+    "price": 176,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "赤貝ひも軍艦",
+    "price": 176,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "姿いか",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -152,6 +168,22 @@ export const hamazushi: SushiItem[] = [
   },
   {
     "name": "炙り重ね厳選まぐろ中とろゆず塩",
+    "price": 319,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "うに軍艦",
+    "price": 319,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "うにいくら軍艦",
     "price": 319,
     "genre": "期間限定",
     "area": [

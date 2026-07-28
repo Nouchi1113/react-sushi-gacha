@@ -7,7 +7,15 @@ export interface SushiItem {
 
 export const hamazushi: SushiItem[] = [
   {
-    "name": "大切りびんちょうまぐろ大とろ",
+    "name": "国産生さば",
+    "price": 110,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "炙り国産さば",
     "price": 110,
     "genre": "期間限定",
     "area": [
@@ -55,6 +63,14 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
+    "name": "富山県産漬けほたるいか",
+    "price": 176,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
     "name": "きすの天ぷら握り",
     "price": 176,
     "genre": "期間限定",
@@ -64,14 +80,6 @@ export const hamazushi: SushiItem[] = [
   },
   {
     "name": "なすの揚げびたし握り",
-    "price": 176,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "いかげそ",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -111,7 +119,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "野菜と食べるサムギョプサル風つつみ",
+    "name": "地中海産本鮪ほほ肉",
     "price": 319,
     "genre": "期間限定",
     "area": [
@@ -119,7 +127,23 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "宮崎県産大切りうなぎ",
+    "name": "炙り地中海産本鮪ほほ肉ゆず塩",
+    "price": 319,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "地中海産本鮪ほほ肉レアステーキ",
+    "price": 319,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "野菜と食べるサムギョプサル風つつみ",
     "price": 319,
     "genre": "期間限定",
     "area": [

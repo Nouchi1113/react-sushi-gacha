@@ -7,7 +7,7 @@ export interface SushiItem {
 
 export const hamazushi: SushiItem[] = [
   {
-    "name": "国産生さば",
+    "name": "コーンの天ぷら握り",
     "price": 110,
     "genre": "期間限定",
     "area": [
@@ -15,7 +15,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "炙り国産さば",
+    "name": "コーンの天ぷら握りマヨ",
     "price": 110,
     "genre": "期間限定",
     "area": [
@@ -23,7 +23,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "三陸産大切り銀鮭",
+    "name": "大切り直火焼きびんちょう（大葉にんにく風味）",
     "price": 110,
     "genre": "期間限定",
     "area": [
@@ -31,39 +31,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "炙り三陸産大切り銀鮭",
-    "price": 110,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "三陸産大切り銀鮭（山わさびのせ）",
-    "price": 110,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "ベーコンマヨ軍艦",
-    "price": 110,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "野沢菜昆布軍艦",
-    "price": 110,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "富山県産漬けほたるいか",
+    "name": "青森名産ねぶた漬け軍艦",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -71,7 +39,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "きすの天ぷら握り",
+    "name": "炙りとろ煮穴子",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -79,7 +47,47 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "なすの揚げびたし握り",
+    "name": "あわび",
+    "price": 176,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "サーモンカルパッチョ",
+    "price": 176,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "えびカルパッチョ",
+    "price": 176,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "アカイカカルパッチョ",
+    "price": 176,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "生ハムカルパッチョ",
+    "price": 176,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "合鴨カルパッチョ",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -111,7 +119,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "なすの揚げびたし握りおろし盛り",
+    "name": "活〆まだいカルパッチョ",
     "price": 231,
     "genre": "期間限定",
     "area": [
@@ -119,31 +127,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "地中海産本鮪ほほ肉",
-    "price": 319,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "炙り地中海産本鮪ほほ肉ゆず塩",
-    "price": 319,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "地中海産本鮪ほほ肉レアステーキ",
-    "price": 319,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "野菜と食べるサムギョプサル風つつみ",
+    "name": "大判豚角煮握りからし付き",
     "price": 319,
     "genre": "期間限定",
     "area": [
@@ -183,31 +167,71 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "一本穴子",
-    "price": 528,
+    "name": "かに三昧",
+    "price": 792,
     "genre": "期間限定",
     "area": [
       "全国"
     ]
   },
   {
-    "name": "特製 麻辣ラーメン",
-    "price": 506,
+    "name": "濃厚冷やし担々麺（花椒付き）",
+    "price": 473,
     "genre": "期間限定",
     "area": [
       "全国"
     ]
   },
   {
-    "name": "うなぎの肝串山椒付き",
-    "price": 429,
+    "name": "気仙沼産ふかひれあんかけ茶碗蒸し",
+    "price": 363,
     "genre": "期間限定",
     "area": [
       "全国"
     ]
   },
   {
-    "name": "サクもちじゃがいもチヂミ",
+    "name": "おつまみ砂肝",
+    "price": 297,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "カリカリポテト（ホットチリ味）",
+    "price": 297,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "MEGAカリカリポテト（ホットチリ味）",
+    "price": 473,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "トロピカル☆マンゴーキウイパルフェ",
+    "price": 473,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "はまとろっミルクアイス",
+    "price": 297,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "はまとろっミルクアイス（白桃ソース）",
     "price": 319,
     "genre": "期間限定",
     "area": [
@@ -215,24 +239,32 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "きすの天ぷら",
-    "price": 176,
+    "name": "はまスカッシュ（ブルー）",
+    "price": 319,
     "genre": "期間限定",
     "area": [
       "全国"
     ]
   },
   {
-    "name": "レトロkawaii♡クリームソーダ風パルフェ",
-    "price": 429,
+    "name": "はまスカッシュ（ストロベリー）",
+    "price": 319,
     "genre": "期間限定",
     "area": [
       "全国"
     ]
   },
   {
-    "name": "ストロベリードーナツバニラアイスのせ",
-    "price": 363,
+    "name": "はまフロート（ブルー）",
+    "price": 396,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "はまフロート（ストロベリー）",
+    "price": 396,
     "genre": "期間限定",
     "area": [
       "全国"
@@ -800,6 +832,14 @@ export const hamazushi: SushiItem[] = [
   },
   {
     "name": "納豆キムチ",
+    "price": 110,
+    "genre": "軍艦・細巻き・その他",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "野沢菜昆布軍艦",
     "price": 110,
     "genre": "軍艦・細巻き・その他",
     "area": [
@@ -1488,7 +1528,7 @@ export const hamazushi: SushiItem[] = [
   },
   {
     "name": "えびの天ぷらそば",
-    "price": 363,
+    "price": 396,
     "genre": "サイドメニュー",
     "area": [
       "全国"
@@ -1512,7 +1552,7 @@ export const hamazushi: SushiItem[] = [
   },
   {
     "name": "鴨そば",
-    "price": 396,
+    "price": 429,
     "genre": "サイドメニュー",
     "area": [
       "全国"
@@ -1536,7 +1576,7 @@ export const hamazushi: SushiItem[] = [
   },
   {
     "name": "えび天鴨そば",
-    "price": 473,
+    "price": 506,
     "genre": "サイドメニュー",
     "area": [
       "全国"
@@ -1824,7 +1864,7 @@ export const hamazushi: SushiItem[] = [
   },
   {
     "name": "大学いもバニラアイス添え",
-    "price": 242,
+    "price": 275,
     "genre": "デザート・ドリンク",
     "area": [
       "全国"
@@ -1832,7 +1872,7 @@ export const hamazushi: SushiItem[] = [
   },
   {
     "name": "コーヒーゼリー(バニラアイスのせ)",
-    "price": 209,
+    "price": 242,
     "genre": "デザート・ドリンク",
     "area": [
       "全国"
@@ -1880,7 +1920,7 @@ export const hamazushi: SushiItem[] = [
   },
   {
     "name": "波照間黒糖のわらびもちバニラアイス添え",
-    "price": 176,
+    "price": 209,
     "genre": "デザート・ドリンク",
     "area": [
       "全国"
@@ -2247,26 +2287,6 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "ほっき貝(カナダ産)",
-    "price": 110,
-    "genre": "地域限定",
-    "area": [
-      "北海道",
-      "東北",
-      "関東",
-      "北陸"
-    ]
-  },
-  {
-    "name": "炙りほっき貝ゆず塩(カナダ産)",
-    "price": 110,
-    "genre": "地域限定",
-    "area": [
-      "北海道",
-      "東北"
-    ]
-  },
-  {
     "name": "真いか",
     "price": 110,
     "genre": "地域限定",
@@ -2338,6 +2358,16 @@ export const hamazushi: SushiItem[] = [
     "genre": "地域限定",
     "area": [
       "北海道"
+    ]
+  },
+  {
+    "name": "ほっき貝(カナダ産)",
+    "price": 110,
+    "genre": "地域限定",
+    "area": [
+      "北海道",
+      "関東",
+      "北陸"
     ]
   },
   {

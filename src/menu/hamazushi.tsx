@@ -1143,22 +1143,6 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "真あじ",
-    "price": 176,
-    "genre": "贅沢握り・三種盛り",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "真あじ漁師漬け",
-    "price": 176,
-    "genre": "贅沢握り・三種盛り",
-    "area": [
-      "全国"
-    ]
-  },
-  {
     "name": "宮城県産とろいわし",
     "price": 176,
     "genre": "贅沢握り・三種盛り",

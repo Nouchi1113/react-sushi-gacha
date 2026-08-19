@@ -7,7 +7,7 @@ export interface SushiItem {
 
 export const hamazushi: SushiItem[] = [
   {
-    "name": "コーンの天ぷら握り",
+    "name": "北海道水揚げ秋鮭",
     "price": 110,
     "genre": "期間限定",
     "area": [
@@ -15,7 +15,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "コーンの天ぷら握りマヨ",
+    "name": "国産野菜と白えびのかき揚げ握り（富山県産白えび使用）",
     "price": 110,
     "genre": "期間限定",
     "area": [
@@ -23,15 +23,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "大切り直火焼きびんちょう（大葉にんにく風味）",
-    "price": 110,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "青森名産ねぶた漬け軍艦",
+    "name": "宮城県産さんま",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -39,7 +31,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "炙りとろ煮穴子",
+    "name": "炙り宮城県産さんま塩レモン",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -47,7 +39,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "あわび",
+    "name": "えびおろし盛り(沖縄県産シークヮーサーだれ)",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -55,7 +47,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "サーモンカルパッチョ",
+    "name": "アカイカおろし盛り(沖縄県産シークヮーサーだれ)",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -63,7 +55,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "えびカルパッチョ",
+    "name": "えび天握りおろし盛り(沖縄県産シークヮーサーだれ)",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -71,7 +63,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "アカイカカルパッチョ",
+    "name": "いか天握りおろし盛り(沖縄県産シークヮーサーだれ)",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -79,7 +71,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "生ハムカルパッチョ",
+    "name": "豚塩カルビおろし盛り(沖縄県産シークヮーサーだれ)",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -87,7 +79,23 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "合鴨カルパッチョ",
+    "name": "合鴨おろし盛り(沖縄県産シークヮーサーだれ)",
+    "price": 176,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "生ハムおろし盛り(沖縄県産シークヮーサーだれ)",
+    "price": 176,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "北海道産つぶ貝のわさび和え",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -119,7 +127,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "活〆まだいカルパッチョ",
+    "name": "活〆まだいおろし盛り(沖縄県産シークヮーサーだれ)",
     "price": 231,
     "genre": "期間限定",
     "area": [
@@ -127,7 +135,23 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "大判豚角煮握りからし付き",
+    "name": "活〆はまちおろし盛り(沖縄県産シークヮーサーだれ)",
+    "price": 231,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "和牛とろ握り レモン",
+    "price": 319,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "和牛とろ握り おろしのせ",
     "price": 319,
     "genre": "期間限定",
     "area": [
@@ -175,8 +199,32 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
+    "name": "あさりとチーズのトマトラーメン",
+    "price": 506,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "あさりとチーズのトマトラーメン追いチーズ",
+    "price": 539,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
     "name": "濃厚冷やし担々麺（花椒付き）",
     "price": 473,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "特製とん汁うどん",
+    "price": 429,
     "genre": "期間限定",
     "area": [
       "全国"
@@ -191,7 +239,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "おつまみ砂肝",
+    "name": "北海道水揚げたことんびの唐揚げ",
     "price": 297,
     "genre": "期間限定",
     "area": [
@@ -225,14 +273,6 @@ export const hamazushi: SushiItem[] = [
   {
     "name": "はまとろっミルクアイス",
     "price": 297,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "はまとろっミルクアイス（白桃ソース）",
-    "price": 319,
     "genre": "期間限定",
     "area": [
       "全国"

@@ -1119,14 +1119,6 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "つぶ貝",
-    "price": 176,
-    "genre": "贅沢握り・三種盛り",
-    "area": [
-      "全国"
-    ]
-  },
-  {
     "name": "赤貝",
     "price": 176,
     "genre": "贅沢握り・三種盛り",
@@ -2608,14 +2600,6 @@ export const hamazushi: SushiItem[] = [
   {
     "name": "おうちではま寿司 手巻きセット",
     "price": 3800,
-    "genre": "都市型",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "定番8貫",
-    "price": 550,
     "genre": "都市型",
     "area": [
       "全国"

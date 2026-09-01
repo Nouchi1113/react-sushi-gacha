@@ -7,7 +7,7 @@ export interface SushiItem {
 
 export const hamazushi: SushiItem[] = [
   {
-    "name": "北海道水揚げ秋鮭",
+    "name": "九州産あじのたたき大葉つつみ",
     "price": 110,
     "genre": "期間限定",
     "area": [
@@ -15,7 +15,15 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "国産野菜と白えびのかき揚げ握り（富山県産白えび使用）",
+    "name": "九州産あじのたたき大葉つつみ（みそ和え）",
+    "price": 110,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "北海道水揚げほっけの天ぷら握り",
     "price": 110,
     "genre": "期間限定",
     "area": [
@@ -95,7 +103,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "北海道産つぶ貝のわさび和え",
+    "name": "沖縄県産そでいか",
     "price": 176,
     "genre": "期間限定",
     "area": [

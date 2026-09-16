@@ -7,22 +7,6 @@ export interface SushiItem {
 
 export const hamazushi: SushiItem[] = [
   {
-    "name": "厳選まぐろ中とろ",
-    "price": 110,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "炙り厳選まぐろ中とろゆず塩",
-    "price": 110,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
     "name": "大葉真いか握り",
     "price": 110,
     "genre": "期間限定",
@@ -103,6 +87,30 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
+    "name": "厳選まぐろ中とろ",
+    "price": 176,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "炙り厳選まぐろ中とろゆず塩",
+    "price": 176,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "特製漬け中とろ",
+    "price": 176,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
     "name": "活〆まだい大分県産かぼすおろし",
     "price": 231,
     "genre": "期間限定",
@@ -135,14 +143,6 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "中とろ三種盛り",
-    "price": 290319,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
     "name": "鹿児島県産大切り活〆かんぱち",
     "price": 319,
     "genre": "期間限定",
@@ -160,6 +160,22 @@ export const hamazushi: SushiItem[] = [
   },
   {
     "name": "鹿児島県産大切りかんぱちレアステーキ",
+    "price": 319,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "重ね厳選まぐろ中とろ",
+    "price": 319,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "炙り重ね厳選まぐろ中とろゆず塩",
     "price": 319,
     "genre": "期間限定",
     "area": [
@@ -1383,6 +1399,14 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
+    "name": "とろ三種盛り中とろ・とろびんちょう・大とろサーモン",
+    "price": 319,
+    "genre": "贅沢握り・三種盛り",
+    "area": [
+      "全国"
+    ]
+  },
+  {
     "name": "とろネバ三種盛りまぐろたたき軍艦・納豆・いかオクラ",
     "price": 176,
     "genre": "贅沢握り・三種盛り",
@@ -1394,6 +1418,22 @@ export const hamazushi: SushiItem[] = [
     "name": "サラダ軍艦三種盛りシーフード・コーン・ツナ",
     "price": 176,
     "genre": "贅沢握り・三種盛り",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "厳選まぐろ中とろ食べ比べ（中とろ・炙りゆず塩）",
+    "price": 319,
+    "genre": "至福の一貫",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "厳選まぐろ中とろ食べ比べ（中とろ・レアステーキ）",
+    "price": 319,
+    "genre": "至福の一貫",
     "area": [
       "全国"
     ]

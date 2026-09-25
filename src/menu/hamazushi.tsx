@@ -7,7 +7,7 @@ export interface SushiItem {
 
 export const hamazushi: SushiItem[] = [
   {
-    "name": "大葉真いか握り",
+    "name": "うにつつみ",
     "price": 110,
     "genre": "期間限定",
     "area": [
@@ -15,7 +15,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "厚切りつぶ貝",
+    "name": "大切りまぐろはらみ",
     "price": 110,
     "genre": "期間限定",
     "area": [
@@ -23,7 +23,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "炙り厚切りつぶ貝塩レモン",
+    "name": "炙り大切りまぐろはらみゆず塩",
     "price": 110,
     "genre": "期間限定",
     "area": [
@@ -31,7 +31,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "宮城県産さんま",
+    "name": "なすの揚げびたし握り",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -39,7 +39,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "炙り宮城県産さんま塩レモン",
+    "name": "ハムカツ握り",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -127,7 +127,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "黄金カレイフライ握り（タルタルソース）",
+    "name": "なすの揚げびたし握りおろし盛り",
     "price": 231,
     "genre": "期間限定",
     "area": [
@@ -135,15 +135,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "黄金カレイフライ握り",
-    "price": 231,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "鹿児島県産大切り活〆かんぱち",
+    "name": "地中海産大切り本鮪中とろ",
     "price": 319,
     "genre": "期間限定",
     "area": [
@@ -151,7 +143,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "鹿児島県産大切り活〆かんぱちゆず塩",
+    "name": "炙り地中海産大切り本鮪中とろゆず塩",
     "price": 319,
     "genre": "期間限定",
     "area": [
@@ -159,7 +151,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "鹿児島県産大切りかんぱちレアステーキ",
+    "name": "時鮭",
     "price": 319,
     "genre": "期間限定",
     "area": [
@@ -183,22 +175,6 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "うに軍艦",
-    "price": 319,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "うにいくら軍艦",
-    "price": 319,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
     "name": "一本穴子",
     "price": 528,
     "genre": "期間限定",
@@ -207,16 +183,56 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "黄金カレイフライ（タルタルソース）",
-    "price": 297,
+    "name": "横浜家系ラーメン",
+    "price": 429,
     "genre": "期間限定",
     "area": [
       "全国"
     ]
   },
   {
-    "name": "特製牛すじ煮込み",
-    "price": 319,
+    "name": "焼豚増量 横浜家系ラーメン",
+    "price": 506,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "辛旨とんこつ醤油ラーメン",
+    "price": 506,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "松茸茶碗蒸し",
+    "price": 396,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "長崎県産あじのアジフライ（タルタルソース）",
+    "price": 242,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "長崎県産あじのアジフライ（お好みソース）",
+    "price": 242,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "長崎県産あじのアジフライ",
+    "price": 242,
     "genre": "期間限定",
     "area": [
       "全国"
@@ -241,6 +257,14 @@ export const hamazushi: SushiItem[] = [
   {
     "name": "和栗モンブラン",
     "price": 297,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "お月見ミニパルフェ",
+    "price": 264,
     "genre": "期間限定",
     "area": [
       "全国"
@@ -1543,6 +1567,14 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
+    "name": "特製とん汁うどん",
+    "price": 429,
+    "genre": "サイドメニュー",
+    "area": [
+      "全国"
+    ]
+  },
+  {
     "name": "えび天きつねうどん",
     "price": 429,
     "genre": "サイドメニュー",
@@ -1833,14 +1865,6 @@ export const hamazushi: SushiItem[] = [
   {
     "name": "たまごプリン",
     "price": 242,
-    "genre": "デザート・ドリンク",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "黒蜜きなこ豆乳プリン",
-    "price": 209,
     "genre": "デザート・ドリンク",
     "area": [
       "全国"

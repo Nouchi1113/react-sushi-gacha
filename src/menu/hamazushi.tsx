@@ -7,7 +7,7 @@ export interface SushiItem {
 
 export const hamazushi: SushiItem[] = [
   {
-    "name": "大切りまぐろはらみ",
+    "name": "大切り直火焼きびんちょう（大葉にんにく風味）",
     "price": 110,
     "genre": "期間限定",
     "area": [
@@ -15,8 +15,16 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "炙り大切りまぐろはらみゆず塩",
-    "price": 110,
+    "name": "北海道水揚げにしん",
+    "price": 132,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "炙り北海道水揚げにしん",
+    "price": 132,
     "genre": "期間限定",
     "area": [
       "全国"
@@ -31,7 +39,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "ハムカツ握り",
+    "name": "北海道産つぶ貝のキムチ和え軍艦",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -136,14 +144,6 @@ export const hamazushi: SushiItem[] = [
   },
   {
     "name": "炙り地中海産大切り本鮪中とろゆず塩",
-    "price": 319,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "時鮭",
     "price": 319,
     "genre": "期間限定",
     "area": [
@@ -1352,6 +1352,22 @@ export const hamazushi: SushiItem[] = [
   },
   {
     "name": "かにみそ軍艦",
+    "price": 176,
+    "genre": "贅沢握り・三種盛り",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "アスパラ天握り",
+    "price": 176,
+    "genre": "贅沢握り・三種盛り",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "アスパラ天",
     "price": 176,
     "genre": "贅沢握り・三種盛り",
     "area": [

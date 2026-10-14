@@ -7,7 +7,7 @@ export interface SushiItem {
 
 export const hamazushi: SushiItem[] = [
   {
-    "name": "大切り直火焼きびんちょう（大葉にんにく風味）",
+    "name": "広島県産牡蠣握り",
     "price": 110,
     "genre": "期間限定",
     "area": [
@@ -15,23 +15,55 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "北海道水揚げにしん",
-    "price": 132,
+    "name": "広島県産牡蠣握り（もみじおろしのせ）",
+    "price": 110,
     "genre": "期間限定",
     "area": [
       "全国"
     ]
   },
   {
-    "name": "炙り北海道水揚げにしん",
-    "price": 132,
+    "name": "広島県産牡蠣握り（ぽん酢ジュレのせ）",
+    "price": 110,
     "genre": "期間限定",
     "area": [
       "全国"
     ]
   },
   {
-    "name": "なすの揚げびたし握り",
+    "name": "広島県産牡蠣のカキフライつつみ",
+    "price": 110,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "広島県産牡蠣のカキフライつつみ（タルタルソース）",
+    "price": 110,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "広島県産牡蠣のカキフライつつみ（お好みソース）",
+    "price": 110,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "国産まいたけの天ぷら握り",
+    "price": 110,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "あんきも軍艦",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -39,7 +71,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "北海道産つぶ貝のキムチ和え軍艦",
+    "name": "あんきもかにみそ軍艦",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -47,7 +79,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "えび大分県産かぼすおろし",
+    "name": "北海道産塩〆黒そい（もみじおろしのせ）",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -55,7 +87,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "アカイカ大分県産かぼすおろし",
+    "name": "炙り北海道産塩〆黒そい",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -63,7 +95,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "合鴨大分県産かぼすおろし",
+    "name": "炙り豚とろ（柚子胡椒のせ）",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -71,7 +103,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "生ハム大分県産かぼすおろし",
+    "name": "炙り豚とろ",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -79,7 +111,39 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "旨だしたまご大分県産かぼすおろし",
+    "name": "アカイカ柚子おろし盛り",
+    "price": 176,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "えび天握り柚子おろし盛り",
+    "price": 176,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "いか天握り柚子おろし盛り",
+    "price": 176,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "豚塩カルビ柚子おろし盛り",
+    "price": 176,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "旨だしたまご柚子おろし盛り",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -111,7 +175,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "活〆まだい大分県産かぼすおろし",
+    "name": "活〆まだい柚子おろし盛り",
     "price": 231,
     "genre": "期間限定",
     "area": [
@@ -119,7 +183,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "活〆はまち大分県産かぼすおろし",
+    "name": "活〆はまち柚子おろし盛り",
     "price": 231,
     "genre": "期間限定",
     "area": [
@@ -127,7 +191,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "なすの揚げびたし握りおろし盛り",
+    "name": "しめさば柚子おろし盛り",
     "price": 231,
     "genre": "期間限定",
     "area": [
@@ -207,7 +271,23 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "長崎県産あじのアジフライ（タルタルソース）",
+    "name": "広島県産牡蠣のカキフライ3個（タルタルソース）",
+    "price": 429,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "広島県産牡蠣のカキフライ3個（お好みソース）",
+    "price": 429,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "今金男爵チーズいももち",
     "price": 242,
     "genre": "期間限定",
     "area": [
@@ -215,56 +295,16 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "長崎県産あじのアジフライ（お好みソース）",
-    "price": 242,
+    "name": "りんごとプリンのキャラメルパルフェ",
+    "price": 429,
     "genre": "期間限定",
     "area": [
       "全国"
     ]
   },
   {
-    "name": "長崎県産あじのアジフライ",
-    "price": 242,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "追加トッピング大根おろし＆かぼす",
-    "price": 132,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "ブルーベリーチーズケーキ風パルフェ",
-    "price": 473,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "和栗モンブラン",
+    "name": "アールグレイベイクドチーズケーキ",
     "price": 297,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "お月見ミニパルフェ",
-    "price": 264,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "冷凍ぶどう",
-    "price": 176,
     "genre": "期間限定",
     "area": [
       "全国"
@@ -1863,6 +1903,14 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
+    "name": "黒蜜きなこ豆乳プリン",
+    "price": 209,
+    "genre": "デザート・ドリンク",
+    "area": [
+      "全国"
+    ]
+  },
+  {
     "name": "大学いも",
     "price": 176,
     "genre": "デザート・ドリンク",
@@ -2345,6 +2393,14 @@ export const hamazushi: SushiItem[] = [
   {
     "name": "とびこ",
     "price": 176,
+    "genre": "地域限定",
+    "area": [
+      "北海道"
+    ]
+  },
+  {
+    "name": "うに軍艦",
+    "price": 319,
     "genre": "地域限定",
     "area": [
       "北海道"

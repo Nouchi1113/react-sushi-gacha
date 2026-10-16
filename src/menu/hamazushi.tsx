@@ -7,30 +7,6 @@ export interface SushiItem {
 
 export const hamazushi: SushiItem[] = [
   {
-    "name": "広島県産牡蠣握り",
-    "price": 110,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "広島県産牡蠣握り（もみじおろしのせ）",
-    "price": 110,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "広島県産牡蠣握り（ぽん酢ジュレのせ）",
-    "price": 110,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
     "name": "広島県産牡蠣のカキフライつつみ",
     "price": 110,
     "genre": "期間限定",

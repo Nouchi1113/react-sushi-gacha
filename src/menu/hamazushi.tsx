@@ -1375,22 +1375,6 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "アスパラ天握り",
-    "price": 176,
-    "genre": "贅沢握り・三種盛り",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "アスパラ天",
-    "price": 176,
-    "genre": "贅沢握り・三種盛り",
-    "area": [
-      "全国"
-    ]
-  },
-  {
     "name": "まぐろ三種盛りまぐろ・とろびんちょう・とろたく",
     "price": 176,
     "genre": "贅沢握り・三種盛り",
@@ -1873,14 +1857,6 @@ export const hamazushi: SushiItem[] = [
   {
     "name": "たまごプリン",
     "price": 242,
-    "genre": "デザート・ドリンク",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "黒蜜きなこ豆乳プリン",
-    "price": 209,
     "genre": "デザート・ドリンク",
     "area": [
       "全国"

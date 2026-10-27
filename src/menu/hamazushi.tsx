@@ -7,6 +7,14 @@ export interface SushiItem {
 
 export const hamazushi: SushiItem[] = [
   {
+    "name": "大切りみなみまぐろ天身",
+    "price": 110,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
     "name": "広島県産牡蠣のカキフライつつみ",
     "price": 110,
     "genre": "期間限定",
@@ -31,40 +39,8 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "国産まいたけの天ぷら握り",
-    "price": 110,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "あんきも軍艦",
-    "price": 176,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "あんきもかにみそ軍艦",
-    "price": 176,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "北海道産塩〆黒そい（もみじおろしのせ）",
-    "price": 176,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "炙り北海道産塩〆黒そい",
-    "price": 176,
+    "name": "淡路島産わかめのわかメンチ握り",
+    "price": 132,
     "genre": "期間限定",
     "area": [
       "全国"
@@ -200,6 +176,14 @@ export const hamazushi: SushiItem[] = [
   },
   {
     "name": "炙り重ね厳選まぐろ中とろゆず塩",
+    "price": 319,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "北海道産茹でオオズワイガニ",
     "price": 319,
     "genre": "期間限定",
     "area": [

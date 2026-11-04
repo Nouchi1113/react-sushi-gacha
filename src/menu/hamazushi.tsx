@@ -7,7 +7,7 @@ export interface SushiItem {
 
 export const hamazushi: SushiItem[] = [
   {
-    "name": "大切りみなみまぐろ天身",
+    "name": "みなみまぐろ大とろ",
     "price": 110,
     "genre": "期間限定",
     "area": [
@@ -39,15 +39,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "淡路島産わかめのわかメンチ握り",
-    "price": 132,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "炙り豚とろ（柚子胡椒のせ）",
+    "name": "北海道産チーズのチキンフライ握り",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -55,7 +47,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "炙り豚とろ",
+    "name": "えび天握りシャキシャキ葱チリソース",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -63,7 +55,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "アカイカ柚子おろし盛り",
+    "name": "いか天握りシャキシャキ葱チリソース",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -71,31 +63,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "えび天握り柚子おろし盛り",
-    "price": 176,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "いか天握り柚子おろし盛り",
-    "price": 176,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "豚塩カルビ柚子おろし盛り",
-    "price": 176,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "旨だしたまご柚子おろし盛り",
+    "name": "山盛り炙りとろサーモンつつみ",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -127,7 +95,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "活〆まだい柚子おろし盛り",
+    "name": "大判姿いか",
     "price": 231,
     "genre": "期間限定",
     "area": [
@@ -135,7 +103,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "活〆はまち柚子おろし盛り",
+    "name": "真鱈白子軍艦",
     "price": 231,
     "genre": "期間限定",
     "area": [
@@ -143,15 +111,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "しめさば柚子おろし盛り",
-    "price": 231,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "地中海産大切り本鮪中とろ",
+    "name": "鹿児島県産大切り活〆平政",
     "price": 319,
     "genre": "期間限定",
     "area": [
@@ -159,7 +119,15 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "炙り地中海産大切り本鮪中とろゆず塩",
+    "name": "炙り鹿児島県産大切り平政ゆず塩",
+    "price": 319,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "鹿児島県産大切り平政レアステーキ",
     "price": 319,
     "genre": "期間限定",
     "area": [
@@ -183,16 +151,16 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "北海道産茹でオオズワイガニ",
-    "price": 319,
+    "name": "直火焼き牛たん握り",
+    "price": 429,
     "genre": "期間限定",
     "area": [
       "全国"
     ]
   },
   {
-    "name": "一本穴子",
-    "price": 528,
+    "name": "直火焼き牛たん握り（ねぎ盛り）",
+    "price": 473,
     "genre": "期間限定",
     "area": [
       "全国"
@@ -223,8 +191,8 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "松茸茶碗蒸し",
-    "price": 396,
+    "name": "五目中華茶碗蒸し",
+    "price": 319,
     "genre": "期間限定",
     "area": [
       "全国"
@@ -247,8 +215,8 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "今金男爵チーズいももち",
-    "price": 242,
+    "name": "グラタンクリームコロッケ2個（ソース付き）",
+    "price": 297,
     "genre": "期間限定",
     "area": [
       "全国"
@@ -1031,7 +999,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "活〆まだい（四国・九州産）",
+    "name": "活〆まだい",
     "price": 176,
     "genre": "贅沢握り・三種盛り",
     "area": [
@@ -1039,7 +1007,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "炙りまだいゆず塩（四国・九州産）",
+    "name": "炙りまだいゆず塩",
     "price": 176,
     "genre": "贅沢握り・三種盛り",
     "area": [
@@ -2358,16 +2326,6 @@ export const hamazushi: SushiItem[] = [
     "genre": "地域限定",
     "area": [
       "北海道"
-    ]
-  },
-  {
-    "name": "石垣貝",
-    "price": 110,
-    "genre": "地域限定",
-    "area": [
-      "北海道",
-      "関東",
-      "北陸"
     ]
   },
   {

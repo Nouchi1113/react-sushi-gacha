@@ -7,7 +7,15 @@ export interface SushiItem {
 
 export const hamazushi: SushiItem[] = [
   {
-    "name": "みなみまぐろ大とろ",
+    "name": "国産大切り生さば",
+    "price": 110,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "炙り国産大切りさば",
     "price": 110,
     "genre": "期間限定",
     "area": [

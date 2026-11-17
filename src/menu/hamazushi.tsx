@@ -7,7 +7,7 @@ export interface SushiItem {
 
 export const hamazushi: SushiItem[] = [
   {
-    "name": "国産大切り生さば",
+    "name": "あぶらがれい",
     "price": 110,
     "genre": "期間限定",
     "area": [
@@ -15,7 +15,15 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "炙り国産大切りさば",
+    "name": "炙りあぶらがれいゆず塩",
+    "price": 110,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "国産まいたけの天ぷら握り",
     "price": 110,
     "genre": "期間限定",
     "area": [
@@ -47,7 +55,31 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "北海道産チーズのチキンフライ握り",
+    "name": "北海道噴火湾産大粒ほたて",
+    "price": 176,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "炙り北海道噴火湾産大粒ほたて焦がし醤油",
+    "price": 176,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "北海道産さんま",
+    "price": 176,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "炙り北海道産さんま塩レモン",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -64,14 +96,6 @@ export const hamazushi: SushiItem[] = [
   },
   {
     "name": "いか天握りシャキシャキ葱チリソース",
-    "price": 176,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "山盛り炙りとろサーモンつつみ",
     "price": 176,
     "genre": "期間限定",
     "area": [
@@ -103,7 +127,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "大判姿いか",
+    "name": "炙り大切りのどぐろ",
     "price": 231,
     "genre": "期間限定",
     "area": [
@@ -111,15 +135,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "真鱈白子軍艦",
-    "price": 231,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "鹿児島県産大切り活〆平政",
+    "name": "大えびフライ握り",
     "price": 319,
     "genre": "期間限定",
     "area": [
@@ -127,7 +143,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "炙り鹿児島県産大切り平政ゆず塩",
+    "name": "大えびフライ握り（タルタルソース）",
     "price": 319,
     "genre": "期間限定",
     "area": [
@@ -135,7 +151,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "鹿児島県産大切り平政レアステーキ",
+    "name": "大えびフライ握り（お好みソース）",
     "price": 319,
     "genre": "期間限定",
     "area": [
@@ -159,7 +175,15 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "直火焼き牛たん握り",
+    "name": "一本穴子",
+    "price": 528,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "濃厚北海道味噌ラーメン",
     "price": 429,
     "genre": "期間限定",
     "area": [
@@ -167,23 +191,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "直火焼き牛たん握り（ねぎ盛り）",
-    "price": 473,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "横浜家系ラーメン",
-    "price": 429,
-    "genre": "期間限定",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "焼豚増量 横浜家系ラーメン",
+    "name": "焼豚増量濃厚北海道味噌ラーメン",
     "price": 506,
     "genre": "期間限定",
     "area": [
@@ -191,7 +199,15 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "辛旨とんこつ醤油ラーメン",
+    "name": "北海道味噌バターコーンラーメン",
+    "price": 506,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "特製辛味噌担々麺",
     "price": 506,
     "genre": "期間限定",
     "area": [
@@ -223,7 +239,7 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "グラタンクリームコロッケ2個（ソース付き）",
+    "name": "おつまみチーズ餃子",
     "price": 297,
     "genre": "期間限定",
     "area": [
@@ -231,15 +247,23 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
-    "name": "りんごとプリンのキャラメルパルフェ",
-    "price": 429,
+    "name": "おつまみチーズ餃子メープルソースがけ",
+    "price": 297,
     "genre": "期間限定",
     "area": [
       "全国"
     ]
   },
   {
-    "name": "アールグレイベイクドチーズケーキ",
+    "name": "蜜芋風パイバニラアイス添え",
+    "price": 363,
+    "genre": "期間限定",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "ティラミスモンブラン",
     "price": 297,
     "genre": "期間限定",
     "area": [
@@ -2207,6 +2231,14 @@ export const hamazushi: SushiItem[] = [
     ]
   },
   {
+    "name": "百年梅酒ソーダ",
+    "price": 473,
+    "genre": "アルコール",
+    "area": [
+      "全国"
+    ]
+  },
+  {
     "name": "サントリーオールフリー（ノンアルコールビール）",
     "price": 396,
     "genre": "アルコール",
@@ -2402,33 +2434,6 @@ export const hamazushi: SushiItem[] = [
       "四国",
       "九州",
       "沖縄"
-    ]
-  },
-  {
-    "name": "大えびフライ握り",
-    "price": 319,
-    "genre": "地域限定",
-    "area": [
-      "北海道",
-      "東海"
-    ]
-  },
-  {
-    "name": "大えびフライ握り（タルタルソース）",
-    "price": 319,
-    "genre": "地域限定",
-    "area": [
-      "北海道",
-      "東海"
-    ]
-  },
-  {
-    "name": "大えびフライ握り（お好みソース）",
-    "price": 319,
-    "genre": "地域限定",
-    "area": [
-      "北海道",
-      "東海"
     ]
   },
   {

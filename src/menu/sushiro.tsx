@@ -2,6 +2,14 @@ import type { SushiItem } from './hamazushi'
 
 export const sushiro: SushiItem[] = [
   {
+    "name": "びん長大とろ",
+    "price": 120,
+    "genre": "フェア商品",
+    "area": [
+      "全国"
+    ]
+  },
+  {
     "name": "ジャンボとろサーモン",
     "price": 120,
     "genre": "フェア商品",
@@ -12,6 +20,22 @@ export const sushiro: SushiItem[] = [
   {
     "name": "びん長ねぎとろ包み",
     "price": 130,
+    "genre": "フェア商品",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "えびアボカド",
+    "price": 150,
+    "genre": "フェア商品",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "こだわりハンバーグにぎり",
+    "price": 170,
     "genre": "フェア商品",
     "area": [
       "全国"
@@ -59,14 +83,6 @@ export const sushiro: SushiItem[] = [
   },
   {
     "name": "濃厚うに包み",
-    "price": 210,
-    "genre": "フェア商品",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "炙り豚とろ",
     "price": 210,
     "genre": "フェア商品",
     "area": [
@@ -346,14 +362,6 @@ export const sushiro: SushiItem[] = [
     ]
   },
   {
-    "name": "えびアボカド",
-    "price": 150,
-    "genre": "にぎり",
-    "area": [
-      "全国"
-    ]
-  },
-  {
     "name": "コウイカ",
     "price": 150,
     "genre": "にぎり",
@@ -450,7 +458,7 @@ export const sushiro: SushiItem[] = [
     ]
   },
   {
-    "name": "えび天にぎり",
+    "name": "かつおたたきわさびマヨ 香味野菜",
     "price": 160,
     "genre": "にぎり",
     "area": [
@@ -458,7 +466,7 @@ export const sushiro: SushiItem[] = [
     ]
   },
   {
-    "name": "かつおたたきわさびマヨ 香味野菜",
+    "name": "えび天にぎり",
     "price": 160,
     "genre": "にぎり",
     "area": [
@@ -482,6 +490,14 @@ export const sushiro: SushiItem[] = [
     ]
   },
   {
+    "name": "グリルチキンチーズマヨ炙り",
+    "price": 170,
+    "genre": "にぎり",
+    "area": [
+      "全国"
+    ]
+  },
+  {
     "name": "サーモンのサラダ寿司",
     "price": 170,
     "genre": "にぎり",
@@ -498,7 +514,7 @@ export const sushiro: SushiItem[] = [
     ]
   },
   {
-    "name": "グリルチキンチーズマヨ炙り",
+    "name": "こだわりチーズハンバーグにぎり",
     "price": 170,
     "genre": "にぎり",
     "area": [
@@ -514,63 +530,7 @@ export const sushiro: SushiItem[] = [
     ]
   },
   {
-    "name": "こだわりハンバーグにぎり",
-    "price": 170,
-    "genre": "にぎり",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "こだわりチーズハンバーグにぎり",
-    "price": 170,
-    "genre": "にぎり",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "特ネタ中とろ",
-    "price": 190,
-    "genre": "にぎり",
-    "area": [
-      "全国"
-    ]
-  },
-  {
     "name": "厳選まぐろ赤身 煮切り醤油漬け",
-    "price": 190,
-    "genre": "にぎり",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "マーラー風かつおたたき揚げネギ添え",
-    "price": 190,
-    "genre": "にぎり",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "生サーモン",
-    "price": 190,
-    "genre": "にぎり",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "焼とろサーモン",
-    "price": 190,
-    "genre": "にぎり",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "おろし焼とろサーモン",
     "price": 190,
     "genre": "にぎり",
     "area": [
@@ -594,8 +554,48 @@ export const sushiro: SushiItem[] = [
     ]
   },
   {
+    "name": "特ネタ中とろ",
+    "price": 190,
+    "genre": "にぎり",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "マーラー風かつおたたき揚げネギ添え",
+    "price": 190,
+    "genre": "にぎり",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "焼とろサーモン",
+    "price": 190,
+    "genre": "にぎり",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "おろし焼とろサーモン",
+    "price": 190,
+    "genre": "にぎり",
+    "area": [
+      "全国"
+    ]
+  },
+  {
     "name": "マーラー風サーモン揚げネギ添え",
     "price": 190,
+    "genre": "にぎり",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "つぶ貝",
+    "price": 230,
     "genre": "にぎり",
     "area": [
       "全国"
@@ -620,6 +620,14 @@ export const sushiro: SushiItem[] = [
   {
     "name": "えんがわ",
     "price": 190,
+    "genre": "にぎり",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "つぶ貝食べ比べ",
+    "price": 250,
     "genre": "にぎり",
     "area": [
       "全国"
@@ -658,6 +666,14 @@ export const sushiro: SushiItem[] = [
     ]
   },
   {
+    "name": "活〆真鯛 煮切り醤油漬け",
+    "price": 270,
+    "genre": "にぎり",
+    "area": [
+      "全国"
+    ]
+  },
+  {
     "name": "うなぎの蒲焼き",
     "price": 190,
     "genre": "にぎり",
@@ -690,6 +706,14 @@ export const sushiro: SushiItem[] = [
     ]
   },
   {
+    "name": "いか飯風すしとゲソにぎり",
+    "price": 270,
+    "genre": "にぎり",
+    "area": [
+      "全国"
+    ]
+  },
+  {
     "name": "サーモン チーズマヨ炙り",
     "price": 210,
     "genre": "にぎり",
@@ -714,32 +738,8 @@ export const sushiro: SushiItem[] = [
     ]
   },
   {
-    "name": "つぶ貝",
-    "price": 230,
-    "genre": "にぎり",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "つぶ貝食べ比べ",
-    "price": 250,
-    "genre": "にぎり",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "活〆真鯛 煮切り醤油漬け",
-    "price": 270,
-    "genre": "にぎり",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "いか飯風すしとゲソにぎり",
-    "price": 270,
+    "name": "漬け活〆真鯛わさびマヨ 香味野菜",
+    "price": 300,
     "genre": "にぎり",
     "area": [
       "全国"
@@ -748,14 +748,6 @@ export const sushiro: SushiItem[] = [
   {
     "name": "炙りまるごと帆立バター醤油",
     "price": 290,
-    "genre": "にぎり",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "漬け活〆真鯛わさびマヨ 香味野菜",
-    "price": 300,
     "genre": "にぎり",
     "area": [
       "全国"
@@ -898,6 +890,14 @@ export const sushiro: SushiItem[] = [
     ]
   },
   {
+    "name": "コーン軍艦",
+    "price": 130,
+    "genre": "軍艦・巻物",
+    "area": [
+      "全国"
+    ]
+  },
+  {
     "name": "ミートボールマヨ軍艦",
     "price": 130,
     "genre": "軍艦・巻物",
@@ -914,7 +914,7 @@ export const sushiro: SushiItem[] = [
     ]
   },
   {
-    "name": "コーン軍艦",
+    "name": "かに風サラダ軍艦",
     "price": 130,
     "genre": "軍艦・巻物",
     "area": [
@@ -931,14 +931,6 @@ export const sushiro: SushiItem[] = [
   },
   {
     "name": "シーサラダ軍艦",
-    "price": 130,
-    "genre": "軍艦・巻物",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "かに風サラダ軍艦",
     "price": 130,
     "genre": "軍艦・巻物",
     "area": [
@@ -1690,6 +1682,22 @@ export const sushiro: SushiItem[] = [
     ]
   },
   {
+    "name": "スシローセット12種(1人前)",
+    "price": 20,
+    "genre": "お持ち帰りメニュー",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "スシローセット12種(2人前)",
+    "price": 40,
+    "genre": "お持ち帰りメニュー",
+    "area": [
+      "全国"
+    ]
+  },
+  {
     "name": "スシローセット10種(1人前)",
     "price": 840,
     "genre": "お持ち帰りメニュー",
@@ -1716,22 +1724,6 @@ export const sushiro: SushiItem[] = [
   {
     "name": "スシローセット10種(4人前)",
     "price": 360,
-    "genre": "お持ち帰りメニュー",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "スシローセット12種(1人前)",
-    "price": 20,
-    "genre": "お持ち帰りメニュー",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "スシローセット12種(2人前)",
-    "price": 40,
     "genre": "お持ち帰りメニュー",
     "area": [
       "全国"

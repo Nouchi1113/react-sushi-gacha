@@ -2,14 +2,6 @@ import type { SushiItem } from './hamazushi'
 
 export const sushiro: SushiItem[] = [
   {
-    "name": "びん長大とろ",
-    "price": 120,
-    "genre": "フェア商品",
-    "area": [
-      "全国"
-    ]
-  },
-  {
     "name": "ジャンボとろサーモン",
     "price": 120,
     "genre": "フェア商品",

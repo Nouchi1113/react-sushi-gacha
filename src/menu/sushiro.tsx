@@ -50,6 +50,14 @@ export const sushiro: SushiItem[] = [
     ]
   },
   {
+    "name": "生キングサーモン",
+    "price": 190,
+    "genre": "フェア商品",
+    "area": [
+      "全国"
+    ]
+  },
+  {
     "name": "とろあじと炙りニシン盛り合わせ",
     "price": 210,
     "genre": "フェア商品",
@@ -76,6 +84,14 @@ export const sushiro: SushiItem[] = [
   {
     "name": "炙り本ずわい蟹",
     "price": 250,
+    "genre": "フェア商品",
+    "area": [
+      "全国"
+    ]
+  },
+  {
+    "name": "とろ生キングサーモン",
+    "price": 270,
     "genre": "フェア商品",
     "area": [
       "全国"
@@ -140,14 +156,6 @@ export const sushiro: SushiItem[] = [
   {
     "name": "かにクリーミーコロッケ",
     "price": 250,
-    "genre": "フェア商品",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "まぜまぜ！おさつッペ",
-    "price": 300,
     "genre": "フェア商品",
     "area": [
       "全国"
@@ -730,14 +738,6 @@ export const sushiro: SushiItem[] = [
     ]
   },
   {
-    "name": "いか飯風すしとゲソにぎり",
-    "price": 270,
-    "genre": "にぎり",
-    "area": [
-      "全国"
-    ]
-  },
-  {
     "name": "炙りまるごと帆立バター醤油",
     "price": 290,
     "genre": "にぎり",
@@ -835,14 +835,6 @@ export const sushiro: SushiItem[] = [
   },
   {
     "name": "アジアン風サーモン軍艦(シラチャーソース)",
-    "price": 130,
-    "genre": "軍艦・巻物",
-    "area": [
-      "全国"
-    ]
-  },
-  {
-    "name": "甘えびマヨ軍艦",
     "price": 130,
     "genre": "軍艦・巻物",
     "area": [

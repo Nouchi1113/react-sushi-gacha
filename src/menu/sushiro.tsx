@@ -410,14 +410,6 @@ export const sushiro: SushiItem[] = [
     ]
   },
   {
-    "name": "牛塩カルビ",
-    "price": 150,
-    "genre": "にぎり",
-    "area": [
-      "全国"
-    ]
-  },
-  {
     "name": "なすの揚げびたしにぎり",
     "price": 150,
     "genre": "にぎり",

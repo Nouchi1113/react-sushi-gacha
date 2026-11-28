@@ -122,14 +122,6 @@ export const sushiro: SushiItem[] = [
     ]
   },
   {
-    "name": "きのこあんかけうどん 明太子のせ",
-    "price": 390,
-    "genre": "フェア商品",
-    "area": [
-      "全国"
-    ]
-  },
-  {
     "name": "濃厚うにまぜそば",
     "price": 510,
     "genre": "フェア商品",
